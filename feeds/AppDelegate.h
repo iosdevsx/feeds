@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class JDInitApp;
+@protocol JDMainRouterInput;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) JDInitApp *initializer;
 
 @end
 

@@ -1,7 +1,7 @@
 # Template information section
-name: «viper_module»
-summary: «viper base module template"
-author: «Yury Loginov»
+name: "viper_module"
+summary: "viper base module template"
+author: "Yury Loginov"
 version: "1.1.4"
 license: "MIT"
 

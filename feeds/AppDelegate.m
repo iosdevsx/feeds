@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "JDMainRouter.h"
+#import "JDInitApp.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self.window makeKeyAndVisible];
+    
+    [self.initializer runApplication];
+    
     return YES;
 }
 
