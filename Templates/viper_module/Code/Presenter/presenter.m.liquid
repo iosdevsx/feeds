@@ -1,0 +1,29 @@
+{% include 'header' %}
+
+#import "{{ prefix }}{{ module_info.name }}Presenter.h"
+
+#import "{{ prefix }}{{ module_info.name }}ViewInput.h"
+#import "{{ prefix }}{{ module_info.name }}InteractorInput.h"
+#import "{{ prefix }}{{ module_info.name }}RouterInput.h"
+
+@implementation {{ prefix }}{{ module_info.name }}Presenter
+
+@synthesize userInterface = _userInterface;
+
+#pragma mark - {{ prefix }}{{ module_info.name }}ModuleInput
+
+- (void)configureModule
+{
+    // Стартовая конфигурация модуля, не привязанная к состоянию view
+}
+
+#pragma mark - {{ prefix }}{{ module_info.name }}ViewOutput
+
+- (void)didTriggerViewReadyEvent 
+{
+	[self.userInterface setupInitialState];
+}
+
+#pragma mark - {{ prefix }}{{ module_info.name }}InteractorOutput
+
+@end
