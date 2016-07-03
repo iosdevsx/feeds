@@ -10,7 +10,7 @@
 #import "JDMainViewOutput.h"
 
 
-@interface JDMainViewController () <UITableViewDataSource>
+@interface JDMainViewController ()
 
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSArray *items;
@@ -32,28 +32,18 @@
 
 - (void)setupInitialState {
     self.navigationItem.title = @"Hello!";
-    //TODO: View не должна решать, какие данные показывать. Вынести в presenter
-    self.items = @[@"1", @"2", @"3", @"4", @"5"];
+    
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    self.tableView.dataSource = self;
+    self.tableView.dataSource = self.dataStorage;
+    self.tableView.delegate = self.dataStorage;
     [self.view addSubview:self.tableView];
+}
+
+- (void)showTableWithData:(NSArray *)data {
+    self.dataStorage.items = data;
     [self.tableView reloadData];
 }
 
 
-//TODO: вынести в отдельный файл
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.items.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identifier = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        cell.textLabel.text = self.items[indexPath.row];
-    }
-    return cell;
-}
 
 @end

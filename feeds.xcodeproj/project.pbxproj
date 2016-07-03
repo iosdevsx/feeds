@@ -12,6 +12,7 @@
 		471654531D2995E8003B6328 /* JDApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 471654521D2995E8003B6328 /* JDApplicationAssembly.m */; };
 		471654581D29A184003B6328 /* LaunchScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 471654571D29A184003B6328 /* LaunchScreen.m */; };
 		4716545A1D29A19F003B6328 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471654591D29A19F003B6328 /* LaunchScreen.xib */; };
+		4716545E1D29A7A9003B6328 /* JDMainDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4716545D1D29A7A9003B6328 /* JDMainDataStorage.m */; };
 		4730B2BC1D29825F0055DE03 /* JDInitAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 4730B2BB1D29825F0055DE03 /* JDInitAssembly.m */; };
 		4730B2BF1D2983230055DE03 /* JDInitApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4730B2BE1D2983230055DE03 /* JDInitApp.m */; };
 		47BBE7C91D23028700007D09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BBE7C81D23028700007D09 /* main.m */; };
@@ -57,6 +58,8 @@
 		471654561D29A184003B6328 /* LaunchScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchScreen.h; sourceTree = "<group>"; };
 		471654571D29A184003B6328 /* LaunchScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchScreen.m; sourceTree = "<group>"; };
 		471654591D29A19F003B6328 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		4716545C1D29A7A9003B6328 /* JDMainDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDMainDataStorage.h; sourceTree = "<group>"; };
+		4716545D1D29A7A9003B6328 /* JDMainDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDMainDataStorage.m; sourceTree = "<group>"; };
 		4730B2BA1D29825F0055DE03 /* JDInitAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDInitAssembly.h; sourceTree = "<group>"; };
 		4730B2BB1D29825F0055DE03 /* JDInitAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDInitAssembly.m; sourceTree = "<group>"; };
 		4730B2BD1D2983230055DE03 /* JDInitApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDInitApp.h; sourceTree = "<group>"; };
@@ -120,6 +123,17 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		4716545B1D29A5F8003B6328 /* Application Classes */ = {
+			isa = PBXGroup;
+			children = (
+				47BBE7CA1D23028700007D09 /* AppDelegate.h */,
+				47BBE7CB1D23028700007D09 /* AppDelegate.m */,
+				4730B2BD1D2983230055DE03 /* JDInitApp.h */,
+				4730B2BE1D2983230055DE03 /* JDInitApp.m */,
+			);
+			name = "Application Classes";
+			sourceTree = "<group>";
+		};
 		4730B2B91D2982460055DE03 /* Assemblies */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,8 +141,6 @@
 				471654521D2995E8003B6328 /* JDApplicationAssembly.m */,
 				4730B2BA1D29825F0055DE03 /* JDInitAssembly.h */,
 				4730B2BB1D29825F0055DE03 /* JDInitAssembly.m */,
-				4730B2BD1D2983230055DE03 /* JDInitApp.h */,
-				4730B2BE1D2983230055DE03 /* JDInitApp.m */,
 			);
 			name = Assemblies;
 			sourceTree = "<group>";
@@ -159,10 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				4730B2B91D2982460055DE03 /* Assemblies */,
-				47BBE7CA1D23028700007D09 /* AppDelegate.h */,
-				47BBE7CB1D23028700007D09 /* AppDelegate.m */,
-				47BBE7C71D23028700007D09 /* Supporting Files */,
+				4716545B1D29A5F8003B6328 /* Application Classes */,
 				02AB2DEEDC6D163739D1A89A /* Modules */,
+				47BBE7C71D23028700007D09 /* Supporting Files */,
 			);
 			path = feeds;
 			sourceTree = "<group>";
@@ -245,6 +256,8 @@
 				3CAAEE62AABF7D06F6276D77 /* JDMainViewOutput.h */,
 				9F85946556D21649F9CBFF29 /* JDMainViewController.h */,
 				2F8DB7DDCFB18EA2B9585BCC /* JDMainViewController.m */,
+				4716545C1D29A7A9003B6328 /* JDMainDataStorage.h */,
+				4716545D1D29A7A9003B6328 /* JDMainDataStorage.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -470,6 +483,7 @@
 				2DB5A43C2B6D35CD74450AAD /* JDMainPresenter.m in Sources */,
 				471654531D2995E8003B6328 /* JDApplicationAssembly.m in Sources */,
 				471654581D29A184003B6328 /* LaunchScreen.m in Sources */,
+				4716545E1D29A7A9003B6328 /* JDMainDataStorage.m in Sources */,
 				4730B2BC1D29825F0055DE03 /* JDInitAssembly.m in Sources */,
 				8FE80EC40B6493CA2B90FD41 /* JDMainInteractor.m in Sources */,
 				98933EBE0E62F8BEEE87C4EA /* JDMainRouter.m in Sources */,

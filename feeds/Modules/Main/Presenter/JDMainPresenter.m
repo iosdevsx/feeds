@@ -28,6 +28,9 @@
 - (void)didTriggerViewReadyEvent 
 {
 	[self.userInterface setupInitialState];
+    
+    NSArray *items = @[@"1", @"2", @"3", @"4", @"5"];
+    [self.userInterface showTableWithData:items];
 }
 
 #pragma mark - JDMainInteractorOutput

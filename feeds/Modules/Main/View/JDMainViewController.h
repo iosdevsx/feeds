@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "JDMainViewInput.h"
+#import "JDMainDataStorage.h"
 
 
 @protocol JDMainViewOutput;
@@ -16,5 +17,6 @@
 @interface JDMainViewController : UIViewController <JDMainViewInput>
 
 @property (nonatomic, strong) id<JDMainViewOutput> eventHandler;
+@property (strong, nonatomic) JDMainDataStorage *dataStorage;
 
 @end

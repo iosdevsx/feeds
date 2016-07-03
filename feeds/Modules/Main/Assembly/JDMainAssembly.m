@@ -12,6 +12,7 @@
 #import "JDMainInteractor.h"
 #import "JDMainRouter.h"
 #import "JDMainPresenter.h"
+#import "JDMainDataStorage.h"
 
 @implementation JDMainAssembly
 
@@ -20,7 +21,14 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(eventHandler)
                                                     with:[self presenterMainModule]];
+                              [definition injectProperty:@selector(dataStorage) with:[self dataStorage]];
                           }];
+}
+
+- (JDMainDataStorage *)dataStorage {
+    return [TyphoonDefinition withClass:[JDMainDataStorage class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(init)];
+    }];
 }
 
 - (JDMainInteractor *)interactorMainModule {
