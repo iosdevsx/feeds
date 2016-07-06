@@ -17,19 +17,22 @@ PODS:
   - Typhoon (3.4.5):
     - Typhoon/no-arc (= 3.4.5)
   - Typhoon/no-arc (3.4.5)
+  - VK-ios-sdk (1.4.2)
 
 DEPENDENCIES:
   - MagicalRecord
   - MWFeedParser
   - SDWebImage
   - Typhoon
+  - VK-ios-sdk
 
 SPEC CHECKSUMS:
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   MWFeedParser: 2cf646014c1baf6ad1b08c480b40a08180079247
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   Typhoon: 200100687af3233ec5ed019064df3c9ffe350475
+  VK-ios-sdk: ac7150f279fdce24f16f5e6f9561e547be33ebf8
 
-PODFILE CHECKSUM: dee15e1a71721e486bbfaf187584e66b73784bbf
+PODFILE CHECKSUM: 646a28b458ee72628f7b0fa99e60761f7ef7e9d3
 
 COCOAPODS: 1.0.1
