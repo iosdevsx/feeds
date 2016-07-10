@@ -8,12 +8,10 @@
 
 #import "JDAuthViewController.h"
 #import "JDAuthViewOutput.h"
-#import <VKSdk.h>
 #import "Masonry.h"
-#import "VKAuthorizeController.h"
 
 
-@interface JDAuthViewController () <VKSdkUIDelegate, VKSdkDelegate>
+@interface JDAuthViewController ()
 
 @property (strong, nonatomic) UIView *containterView;
 @property (strong, nonatomic) UIButton *loginButton;
@@ -48,7 +46,6 @@
     [self.containterView addSubview:self.loginButton];
     
     [self.view addSubview:self.containterView];
-    [self vkInit];
 }
 
 - (void)setupConstraints {
@@ -67,52 +64,8 @@
     }];
 }
 
-- (void)vkInit {
-    VKSdk *sdk = [VKSdk initializeWithAppId:@"5277780"];
-    [sdk setUiDelegate:self];
-    [sdk registerDelegate:self];
-}
-
-- (void)checkVkSession {
-    NSArray *scope = @[@"friends", @"email"];
-    
-    [VKSdk wakeUpSession:scope completeBlock:^(VKAuthorizationState state, NSError *error) {
-        if (state == VKAuthorizationInitialized) {
-            [VKAuthorizeController presentForAuthorizeWithAppId:@"5277780" andPermissions:scope revokeAccess:true displayType:VK_DISPLAY_IOS];
-            
-        } else if (state == VKAuthorizationAuthorized) {
-            
-        } else if (error) {
-            
-        }
-    }];
-}
-
-#pragma mark - Actions
-
 - (void)actionLoginTap {
-    //[self checkVkSession];
-    [VKAuthorizeController presentForAuthorizeWithAppId:@"5277780" andPermissions:@[@"email"] revokeAccess:true displayType:VK_DISPLAY_IOS];
-}
-
-#pragma mark - VKSdkDelegate
-
-- (void)vkSdkAccessAuthorizationFinishedWithResult:(VKAuthorizationResult *)result {
-    
-}
-
-- (void)vkSdkUserAuthorizationFailed {
-    
-}
-
-#pragma mark - VKSdkUIDelegate
-
-- (void)vkSdkShouldPresentViewController:(UIViewController *)controller {
-    
-}
-
-- (void)vkSdkNeedCaptchaEnter:(VKError *)captchaError {
-    
+    [self.eventHandler handleLoginTap];
 }
 
 @end

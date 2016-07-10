@@ -1,7 +1,10 @@
 {% include 'header' %}
 
 #import <Typhoon/Typhoon.h>
+#import "{{ prefix }}{{ module_info.name }}ModuleFactory.h"
 
-@interface {{ prefix }}{{ module_info.name }}Assembly : TyphoonAssembly
+@interface {{ prefix }}{{ module_info.name }}Assembly : TyphoonAssembly <{{ prefix }}{{ module_info.name }}ModuleFactory>
+
+- (id <{{ prefix }}{{ module_info.name }}RouterInput>)router{{ module_info.name }}Module;
 
 @end

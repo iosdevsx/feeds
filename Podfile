@@ -8,7 +8,6 @@ target 'feeds' do
     pod 'SDWebImage'
     pod 'MWFeedParser'
     pod 'Typhoon'
-    pod 'VK-ios-sdk'
     pod 'Masonry'
 end
 

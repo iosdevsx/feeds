@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "JDMainRouter.h"
 #import "JDInitApp.h"
-#import <VKSdk.h>
 
 @interface AppDelegate ()
 
@@ -25,11 +24,6 @@
     
     [self.initializer runApplication];
     
-    return YES;
-}
-
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
-    [VKSdk processOpenURL:url fromApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]];
     return YES;
 }
 

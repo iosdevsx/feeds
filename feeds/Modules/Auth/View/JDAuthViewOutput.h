@@ -15,5 +15,6 @@
  */
 - (void)didTriggerViewReadyEvent;
 - (void)showMainModule;
+- (void)handleLoginTap;
 
 @end

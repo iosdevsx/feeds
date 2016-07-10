@@ -13,7 +13,6 @@
 #import "JDAuthRouter.h"
 #import "JDAuthPresenter.h"
 #import "JDApplicationAssembly.h"
-#import "VKAuthorizeController.h"
 
 @implementation JDAuthAssembly
 

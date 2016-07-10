@@ -1,0 +1,9 @@
+{% include 'header' %}
+
+@protocol {{ prefix }}{{ module_info.name }}ModuleInput;
+
+@protocol {{ prefix }}{{ module_info.name }}ModuleFactory <NSObject>
+
+- (id <{{ prefix }}{{ module_info.name }}ModuleInput>{{ prefix }}{{ module_info.name }}presenter{{ module_info.name }}Module);
+
+@end

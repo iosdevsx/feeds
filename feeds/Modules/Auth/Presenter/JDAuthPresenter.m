@@ -35,6 +35,10 @@
     [self.router showAuthModuleInNavigation:self.navigationController];
 }
 
+- (void)handleLoginTap {
+    
+}
+
 #pragma mark - JDAuthInteractorOutput
 
 @end

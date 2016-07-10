@@ -27,4 +27,8 @@
     [self.rootNavigation presentViewController:viewController.userInterface animated:YES completion:nil];
 }
 
+- (void)presentAuthWebView {
+    
+}
+
 @end
