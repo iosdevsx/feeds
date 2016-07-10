@@ -8,10 +8,12 @@
 
 #import "JDInitApp.h"
 #import "JDMainRouterInput.h"
+#import "JDAuthRouter.h"
 
 @implementation JDInitApp
 
 - (void)runApplication {
+    //[self.authRouter presentAuthModule];
     [self.mainRouter showMainModuleInNavigation:self.mainNavigation];
 }
 

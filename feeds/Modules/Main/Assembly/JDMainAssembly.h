@@ -9,7 +9,6 @@
 #import <Typhoon/Typhoon.h>
 #import "JDMainModuleFactory.h"
 
-@class JDMainRouter;
 @protocol JDMainRouterInput;
 
 @interface JDMainAssembly : TyphoonAssembly <JDMainModuleFactory>

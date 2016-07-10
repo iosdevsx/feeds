@@ -34,6 +34,7 @@
 	</array>
 	<key>TyphoonInitialAssemblies</key>
 	<array>
+		<string>JDAuthAssembly</string>
 		<string>JDInitAssembly</string>
 		<string>JDApplicationAssembly</string>
 		<string>JDMainAssembly</string>

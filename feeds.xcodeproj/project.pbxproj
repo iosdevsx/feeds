@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		01C0F6A8FB47CC41D5A284E5 /* JDMainAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 456557F9F1D38CB93E2F4F2F /* JDMainAssembly.m */; };
 		2DB5A43C2B6D35CD74450AAD /* JDMainPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA54C741F1BAE227B99CAF4 /* JDMainPresenter.m */; };
+		33C33EBFE23BACC17610883D /* JDAuthPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D4291B88DA05D18CCE8312 /* JDAuthPresenter.m */; };
+		38C94631A7FDF09A9948FB90 /* JDAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CF8369984F84AD1BB0C223 /* JDAuthViewController.m */; };
 		471654531D2995E8003B6328 /* JDApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 471654521D2995E8003B6328 /* JDApplicationAssembly.m */; };
 		471654581D29A184003B6328 /* LaunchScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 471654571D29A184003B6328 /* LaunchScreen.m */; };
 		4716545A1D29A19F003B6328 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471654591D29A19F003B6328 /* LaunchScreen.xib */; };
@@ -20,9 +22,12 @@
 		47BBE7D41D23028700007D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BBE7D31D23028700007D09 /* Assets.xcassets */; };
 		47BBE7E21D23028700007D09 /* feedsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BBE7E11D23028700007D09 /* feedsTests.m */; };
 		47BBE7ED1D23028700007D09 /* feedsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BBE7EC1D23028700007D09 /* feedsUITests.m */; };
+		7ED9871F85CD6934315F07D7 /* JDAuthInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D4B58A86C7F1092B4D6DE9 /* JDAuthInteractor.m */; };
 		80416C84F887D7466DC716E9 /* libPods-feeds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB9D3E3F1D04F2FBD02E267 /* libPods-feeds.a */; };
 		8FE80EC40B6493CA2B90FD41 /* JDMainInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E414A0BB3D3716B91ABD835A /* JDMainInteractor.m */; };
 		98933EBE0E62F8BEEE87C4EA /* JDMainRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 28948DDD1065205AFA1DD7A9 /* JDMainRouter.m */; };
+		C5E01908760A8E454E4D2064 /* JDAuthRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AE0FC077A88EB91FA45BFC /* JDAuthRouter.m */; };
+		EA2A023CDE73F2360B0E4667 /* JDAuthAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E12FF77CAEDBC6A074F662 /* JDAuthAssembly.m */; };
 		EEA2E5B58E86CC61BF2E699B /* JDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DB7DDCFB18EA2B9585BCC /* JDMainViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -47,10 +52,15 @@
 		029DF609583F9BE56B743564 /* JDMainModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDMainModuleInput.h; sourceTree = "<group>"; };
 		0CDB1D612B1C936B6EB72BDC /* JDMainRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDMainRouterInput.h; sourceTree = "<group>"; };
 		0F76196B139F7CB7B3A26546 /* JDMainInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDMainInteractor.h; sourceTree = "<group>"; };
+		11CF8369984F84AD1BB0C223 /* JDAuthViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDAuthViewController.m; sourceTree = "<group>"; };
 		1211281C0C1F4533DBDEAACF /* Pods-feeds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feeds.release.xcconfig"; path = "Pods/Target Support Files/Pods-feeds/Pods-feeds.release.xcconfig"; sourceTree = "<group>"; };
+		12D5E27E1E0E3AC806BC1F74 /* JDAuthPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDAuthPresenter.h; sourceTree = "<group>"; };
 		28948DDD1065205AFA1DD7A9 /* JDMainRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDMainRouter.m; sourceTree = "<group>"; };
+		2B513940648AA255EE72D921 /* JDAuthModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDAuthModuleInput.h; sourceTree = "<group>"; };
 		2F8DB7DDCFB18EA2B9585BCC /* JDMainViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDMainViewController.m; sourceTree = "<group>"; };
 		327D9B7E9AF9A6EED887DBC5 /* JDMainViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDMainViewInput.h; sourceTree = "<group>"; };
+		36FBE3D5A57492858290168D /* JDAuthInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDAuthInteractor.h; sourceTree = "<group>"; };
+		37FDDC250120C237B69CC486 /* JDAuthRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDAuthRouterInput.h; sourceTree = "<group>"; };
 		3CAAEE62AABF7D06F6276D77 /* JDMainViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDMainViewOutput.h; sourceTree = "<group>"; };
 		456557F9F1D38CB93E2F4F2F /* JDMainAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDMainAssembly.m; sourceTree = "<group>"; };
 		471654511D2995E8003B6328 /* JDApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDApplicationAssembly.h; sourceTree = "<group>"; };
@@ -78,14 +88,26 @@
 		47BBE7EC1D23028700007D09 /* feedsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = feedsUITests.m; sourceTree = "<group>"; };
 		47BBE7EE1D23028700007D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BA54C741F1BAE227B99CAF4 /* JDMainPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDMainPresenter.m; sourceTree = "<group>"; };
+		5A7861999061963BEAC830E4 /* JDAuthInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDAuthInteractorInput.h; sourceTree = "<group>"; };
+		61D4291B88DA05D18CCE8312 /* JDAuthPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDAuthPresenter.m; sourceTree = "<group>"; };
+		64F21CF10416C6588651B82C /* JDAuthAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDAuthAssembly.h; sourceTree = "<group>"; };
+		6AEEFA0CCE8CFECA571A1F56 /* JDAuthViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDAuthViewController.h; sourceTree = "<group>"; };
+		71E4760451CBA6C02DBB6407 /* JDAuthRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDAuthRouter.h; sourceTree = "<group>"; };
 		7AFF90FFBD8A4C96C0F256CA /* JDMainInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDMainInteractorOutput.h; sourceTree = "<group>"; };
 		7FA915D10CA90DBCC0D89844 /* Pods-feeds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feeds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feeds/Pods-feeds.debug.xcconfig"; sourceTree = "<group>"; };
+		90BE5AE26955E459E1B40BE1 /* JDAuthViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDAuthViewInput.h; sourceTree = "<group>"; };
 		9F85946556D21649F9CBFF29 /* JDMainViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDMainViewController.h; sourceTree = "<group>"; };
+		B4D4B58A86C7F1092B4D6DE9 /* JDAuthInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDAuthInteractor.m; sourceTree = "<group>"; };
+		B9E12FF77CAEDBC6A074F662 /* JDAuthAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDAuthAssembly.m; sourceTree = "<group>"; };
+		BA4068AD8A11B573696277FC /* JDAuthInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDAuthInteractorOutput.h; sourceTree = "<group>"; };
 		BB2A10C423E55F18DE7DF7C4 /* JDMainAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDMainAssembly.h; sourceTree = "<group>"; };
+		C6AE0FC077A88EB91FA45BFC /* JDAuthRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDAuthRouter.m; sourceTree = "<group>"; };
 		D416DFB09508A1DDF50C0CD8 /* JDMainPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDMainPresenter.h; sourceTree = "<group>"; };
 		D7A41DADBD5A8335A815ACB0 /* JDMainRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDMainRouter.h; sourceTree = "<group>"; };
+		D8881C3F81D9E5C7AB3907D7 /* JDAuthViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDAuthViewOutput.h; sourceTree = "<group>"; };
 		DEB9D3E3F1D04F2FBD02E267 /* libPods-feeds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-feeds.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E414A0BB3D3716B91ABD835A /* JDMainInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JDMainInteractor.m; sourceTree = "<group>"; };
+		F3EAD9791D2DA7060038E175 /* JDAuthModuleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDAuthModuleFactory.h; sourceTree = "<group>"; };
 		FB47012CE0D1C669E3074E4A /* JDMainInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JDMainInteractorInput.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,12 +137,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01DB17EAD2C51709F77E5C42 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B513940648AA255EE72D921 /* JDAuthModuleInput.h */,
+				12D5E27E1E0E3AC806BC1F74 /* JDAuthPresenter.h */,
+				61D4291B88DA05D18CCE8312 /* JDAuthPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		02AB2DEEDC6D163739D1A89A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				AC176E9CB3E3C68E662D0C96 /* Main */,
+				514C35C19EE2C366260DE3C2 /* Auth */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		10EAC8A533AA029B07537F8C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5A7861999061963BEAC830E4 /* JDAuthInteractorInput.h */,
+				BA4068AD8A11B573696277FC /* JDAuthInteractorOutput.h */,
+				36FBE3D5A57492858290168D /* JDAuthInteractor.h */,
+				B4D4B58A86C7F1092B4D6DE9 /* JDAuthInteractor.m */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		4716545B1D29A5F8003B6328 /* Application Classes */ = {
@@ -209,6 +253,16 @@
 			path = feedsUITests;
 			sourceTree = "<group>";
 		};
+		514C35C19EE2C366260DE3C2 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F30CD3EB1D303A9B00FCDF8E /* Logic */,
+				F30CD3EA1D303A9200FCDF8E /* UI */,
+				AD307147F857E1627AFC4337 /* Router */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		66125B407303A33C54902464 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,13 +276,21 @@
 		AC176E9CB3E3C68E662D0C96 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				FB1F56915EF47D9F2159833F /* Assembly */,
-				D8CA6179718DA8C920604EEA /* View */,
-				66125B407303A33C54902464 /* Presenter */,
-				E976A1DB56CA1AAA43D6069E /* Interactor */,
+				F30CD3ED1D303AC000FCDF8E /* Logic */,
+				F30CD3EE1D303AC700FCDF8E /* UI */,
 				D1647590B539E442D594EE8A /* Router */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		AD307147F857E1627AFC4337 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				37FDDC250120C237B69CC486 /* JDAuthRouterInput.h */,
+				71E4760451CBA6C02DBB6407 /* JDAuthRouter.h */,
+				C6AE0FC077A88EB91FA45BFC /* JDAuthRouter.m */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		B25C3F43C25E299ECBD03DAD /* Frameworks */ = {
@@ -237,6 +299,27 @@
 				DEB9D3E3F1D04F2FBD02E267 /* libPods-feeds.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6E5D4A9F116802255C1835D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				64F21CF10416C6588651B82C /* JDAuthAssembly.h */,
+				B9E12FF77CAEDBC6A074F662 /* JDAuthAssembly.m */,
+				F3EAD9791D2DA7060038E175 /* JDAuthModuleFactory.h */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		C6EB9FE2D6D4D2C4DDB450D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90BE5AE26955E459E1B40BE1 /* JDAuthViewInput.h */,
+				D8881C3F81D9E5C7AB3907D7 /* JDAuthViewOutput.h */,
+				6AEEFA0CCE8CFECA571A1F56 /* JDAuthViewController.h */,
+				11CF8369984F84AD1BB0C223 /* JDAuthViewController.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D1647590B539E442D594EE8A /* Router */ = {
@@ -280,6 +363,42 @@
 				E414A0BB3D3716B91ABD835A /* JDMainInteractor.m */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F30CD3EA1D303A9200FCDF8E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C6EB9FE2D6D4D2C4DDB450D4 /* View */,
+				01DB17EAD2C51709F77E5C42 /* Presenter */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F30CD3EB1D303A9B00FCDF8E /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C6E5D4A9F116802255C1835D /* Assembly */,
+				10EAC8A533AA029B07537F8C /* Interactor */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		F30CD3ED1D303AC000FCDF8E /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				FB1F56915EF47D9F2159833F /* Assembly */,
+				E976A1DB56CA1AAA43D6069E /* Interactor */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		F30CD3EE1D303AC700FCDF8E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA6179718DA8C920604EEA /* View */,
+				66125B407303A33C54902464 /* Presenter */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		FB1F56915EF47D9F2159833F /* Assembly */ = {
@@ -487,6 +606,11 @@
 				4730B2BC1D29825F0055DE03 /* JDInitAssembly.m in Sources */,
 				8FE80EC40B6493CA2B90FD41 /* JDMainInteractor.m in Sources */,
 				98933EBE0E62F8BEEE87C4EA /* JDMainRouter.m in Sources */,
+				EA2A023CDE73F2360B0E4667 /* JDAuthAssembly.m in Sources */,
+				38C94631A7FDF09A9948FB90 /* JDAuthViewController.m in Sources */,
+				33C33EBFE23BACC17610883D /* JDAuthPresenter.m in Sources */,
+				7ED9871F85CD6934315F07D7 /* JDAuthInteractor.m in Sources */,
+				C5E01908760A8E454E4D2064 /* JDAuthRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

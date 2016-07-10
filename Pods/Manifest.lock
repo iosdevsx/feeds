@@ -2,6 +2,7 @@ PODS:
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
+  - Masonry (1.0.1)
   - MWFeedParser (1.0.1):
     - MWFeedParser/FeedParser (= 1.0.1)
     - MWFeedParser/NSDate+InternetDateTime (= 1.0.1)
@@ -21,6 +22,7 @@ PODS:
 
 DEPENDENCIES:
   - MagicalRecord
+  - Masonry
   - MWFeedParser
   - SDWebImage
   - Typhoon
@@ -28,11 +30,12 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MWFeedParser: 2cf646014c1baf6ad1b08c480b40a08180079247
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   Typhoon: 200100687af3233ec5ed019064df3c9ffe350475
   VK-ios-sdk: ac7150f279fdce24f16f5e6f9561e547be33ebf8
 
-PODFILE CHECKSUM: 646a28b458ee72628f7b0fa99e60761f7ef7e9d3
+PODFILE CHECKSUM: 6a753a788dec682e13026635cdd4d09d7ff2d24c
 
 COCOAPODS: 1.0.1

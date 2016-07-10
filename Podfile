@@ -4,10 +4,11 @@
 # use_frameworks!
 
 target 'feeds' do
-   pod 'MagicalRecord'
-   pod 'SDWebImage'
-   pod 'MWFeedParser'
-   pod 'Typhoon'
-   pod 'VK-ios-sdk'
+    pod 'MagicalRecord'
+    pod 'SDWebImage'
+    pod 'MWFeedParser'
+    pod 'Typhoon'
+    pod 'VK-ios-sdk'
+    pod 'Masonry'
 end
 

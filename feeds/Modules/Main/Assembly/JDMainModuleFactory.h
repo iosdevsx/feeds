@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @protocol JDMainModuleInput;
-@protocol JDMainRouterInput;
 
 @protocol JDMainModuleFactory <NSObject>
 

@@ -11,11 +11,13 @@
 
 @class JDInitApp;
 @class JDMainAssembly;
+@class JDAuthAssembly;
 @class JDApplicationAssembly;
 
 @interface JDInitAssembly : TyphoonAssembly
 
 @property (nonatomic, strong) JDMainAssembly *mainAssembly;
+@property (nonatomic, strong) JDAuthAssembly *authAssembly;
 @property (nonatomic, strong) JDApplicationAssembly *appAssembly;
 
 - (JDInitApp *)appInitializer;

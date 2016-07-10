@@ -10,10 +10,12 @@
 #import <UIKit/UIKit.h>
 
 @protocol JDMainRouterInput;
+@protocol JDAuthRouterInput;
 
 @interface JDInitApp : NSObject
 
 @property (strong, nonatomic) id<JDMainRouterInput> mainRouter;
+@property (strong, nonatomic) id<JDAuthRouterInput> authRouter;
 @property (strong, nonatomic) UINavigationController *mainNavigation;
 
 - (void)runApplication;
