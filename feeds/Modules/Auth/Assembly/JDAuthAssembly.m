@@ -13,6 +13,7 @@
 #import "JDAuthRouter.h"
 #import "JDAuthPresenter.h"
 #import "JDApplicationAssembly.h"
+#import "JDWebAssembly.h"
 
 @implementation JDAuthAssembly
 
@@ -53,6 +54,8 @@
                                                     with:[self viewAuthModule]];
                               [definition injectProperty:@selector(authFactory)
                                                     with:self];
+                              [definition injectProperty:@selector(webFactory)
+                                                    with:self.webAssembly];
                               [definition injectProperty:@selector(rootNavigation)
                                                     with:self.appAssembly.mainNavigation];
                           }];

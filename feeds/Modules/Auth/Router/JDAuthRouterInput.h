@@ -15,5 +15,6 @@
 
 - (void)showAuthModuleInNavigation:(UINavigationController *)navigation;
 - (void)presentAuthModule;
+- (void)presentWebViewModule;
 
 @end

@@ -36,7 +36,7 @@
 }
 
 - (void)handleLoginTap {
-    
+    [self.router presentWebViewModule];
 }
 
 #pragma mark - JDAuthInteractorOutput

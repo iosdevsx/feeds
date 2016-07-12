@@ -8,6 +8,7 @@
 
 #import "JDAuthRouter.h"
 #import "JDAuthModuleInput.h"
+#import "JDWebModuleInput.h"
 
 @interface JDAuthRouter()
 
@@ -24,11 +25,13 @@
 
 - (void)presentAuthModule {
     id <JDAuthModuleInput> viewController = self.authFactory.presenterAuthModule;
-    [self.rootNavigation presentViewController:viewController.userInterface animated:YES completion:nil];
+    [self.rootNavigation pushViewController:viewController.userInterface animated:YES];
 }
 
-- (void)presentAuthWebView {
-    
+- (void)presentWebViewModule {
+    id <JDWebModuleInput> webVC = self.webFactory.presenterWebModule;
+    [webVC configureModuleWithVk];
+    [self.viewController.navigationController pushViewController:webVC.userInterface animated:YES];
 }
 
 @end

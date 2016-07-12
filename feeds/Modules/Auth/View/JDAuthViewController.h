@@ -11,11 +11,9 @@
 
 
 @protocol JDAuthViewOutput;
-@class VKAuthorizeController;
 
 @interface JDAuthViewController : UIViewController <JDAuthViewInput>
 
 @property (nonatomic, strong) id<JDAuthViewOutput> eventHandler;
-@property (nonatomic, strong) VKAuthorizeController *vkAuthController;
 
 @end

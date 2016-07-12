@@ -36,11 +36,11 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.containterView = [UIView new];
-    self.containterView.backgroundColor = [UIColor lightGrayColor];
+    self.containterView.backgroundColor = [UIColor whiteColor];
     
     self.loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.loginButton.backgroundColor = [UIColor redColor];
-    self.loginButton.titleLabel.text = @"Login with VK";
+    self.loginButton.backgroundColor = [UIColor colorWithRed:135.f/255 green:206.f/255 blue:250.f/255 alpha:1.f];
+    [self.loginButton setTitle:@"Login" forState:UIControlStateNormal];
     [self.loginButton addTarget:self action:@selector(actionLoginTap) forControlEvents:UIControlEventTouchUpInside];
     
     [self.containterView addSubview:self.loginButton];
@@ -59,7 +59,7 @@
     [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(200));
         make.height.equalTo(@(50));
-        make.top.equalTo(self.containterView).with.offset(40.f);
+        make.top.equalTo(self.containterView).with.offset(80.f);
         make.centerX.equalTo(self.containterView.mas_centerX);
     }];
 }

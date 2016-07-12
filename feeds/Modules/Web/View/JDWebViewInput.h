@@ -14,5 +14,6 @@
  * Метод настраивает начальный стейт view
  */
 - (void)setupInitialState;
+- (void)setupInitialStateWithRequest:(NSURLRequest *)request;
 
 @end

@@ -17,5 +17,8 @@
  * Метод инициирует стартовую конфигурацию текущего модуля
  */
 - (void)configureModule;
+- (void)configureModuleWith:(NSString *)stringUrl;
+- (void)configureModuleWithVk;
+- (void)configureModuleWithFb;
 
 @end

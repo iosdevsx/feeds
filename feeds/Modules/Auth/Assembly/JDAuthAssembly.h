@@ -11,10 +11,13 @@
 
 @protocol JDMainRouterInput;
 @class JDApplicationAssembly;
+@class JDWebAssembly;
 
 @interface JDAuthAssembly : TyphoonAssembly <JDAuthModuleFactory>
 
 @property (strong, nonatomic) JDApplicationAssembly *appAssembly;
+@property (strong, nonatomic) JDWebAssembly *webAssembly;
+
 - (id<JDMainRouterInput>)routerAuthModule;
 
 @end
